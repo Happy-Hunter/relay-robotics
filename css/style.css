@@ -21,16 +21,15 @@ body {
     background-image: url("images/homepage-background.png");
 }
 
-.nav-middle {
-    border: 1px solid white;
-}
-
 .nav-left {
     width: 25%;
-    border: 1px solid white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
-.hamburger-div, .newsletter-div {
+.nav-left-inner {
+    display: flex;
 }
 
 .newsletter {
@@ -45,12 +44,17 @@ body {
     width: 25%;
     
     display: flex;
-    justify-content: space-around;
-    border: 1px solid white;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .hamburger {
     display: inline-block;
     position: relative;
     width: 45%;
+}
+
+.nav-right-inner {
+    display: flex;
+    justify-content: space-around;
 }
