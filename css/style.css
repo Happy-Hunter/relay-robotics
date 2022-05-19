@@ -1,5 +1,5 @@
 body {
-
+    margin: 0;
 }
 
 .nav-bar {
@@ -13,7 +13,8 @@ body {
 
 .logo {
     width: 50%;
-    height: auto;
+    margin: 8% auto;
+    display: block;
 }
 
 .inner-content{
@@ -21,17 +22,35 @@ body {
 }
 
 .nav-middle {
-
+    border: 1px solid white;
 }
 
 .nav-left {
     width: 25%;
+    border: 1px solid white;
+}
+
+.hamburger-div, .newsletter-div {
+}
+
+.newsletter {
+    color: white;
+    text-decoration: none;
+    margin: auto;
+    
+    display: inline-block;
 }
 
 .nav-right {
     width: 25%;
-
+    
     display: flex;
     justify-content: space-around;
     border: 1px solid white;
+}
+
+.hamburger {
+    display: inline-block;
+    position: relative;
+    width: 45%;
 }
