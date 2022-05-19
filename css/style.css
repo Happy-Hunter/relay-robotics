@@ -1,13 +1,16 @@
-body {
+:root {
+    --blue: #2C69B2
+    --white: #ffffff;
+  }
 
+body {
+    font-family: 'Raleway', sans-serif;
 }
 
 .nav-bar {
     margin: 0;
-
     display: flex;
     justify-content: space-between;
-
     background-color: black;
 }
 
@@ -20,18 +23,98 @@ body {
     background-image: url("images/homepage-background.png");
 }
 
-.nav-middle {
-
-}
-
 .nav-left {
     width: 25%;
 }
 
 .nav-right {
     width: 25%;
-
     display: flex;
     justify-content: space-around;
     border: 1px solid white;
+}
+
+button {
+    background-color: #2C69B2;
+    color: white;
+    padding: 10px;
+    border: none;
+}
+
+.heading {
+    font-family: 'Raleway', sans-serif;
+    font-size: 18pt;
+    color: var(--blue);
+    font-weight: 400;
+    color: #225B87;
+}
+
+.form-container {
+    margin: 1em;
+}
+
+input[type="text"] {
+    background-color : #f4f3f3; 
+    border: none;
+    display: block;
+    width: 100%;
+    line-height: 3em;
+    margin: 0, 10px;
+    font-size: 14pt;
+  }
+
+fieldset {
+    border-color: #4996D0;
+    border-radius: 15px;
+}
+
+
+h2 {
+    font-size: 4vw;
+    font-weight: 400;
+}
+
+.pref-heading {
+    margin-top: 3em;
+}
+
+fieldset h2 {
+    font-size: 4vw;
+    font-weight: 400;
+    color: #225B87
+}
+
+#submit-button {
+    display: flex;
+    justify-content: center;
+    margin: 1.5em;
+}
+
+#submit-button button {
+    padding: 20px;
+}
+
+.validation-rules {
+    color: black;
+    opacity: 50%;
+    font-size: 10pt;
+}
+
+span {
+    color: red;
+}
+
+hr {
+    color: #ddd;
+    background-color: #ddd;
+    height: 1.5px;
+    border: none;
+    max-width: 100%;
+}
+
+#mascot-img {
+    width: 60%;
+    height: auto;
+    margin: 0 auto;
+    display: block;
 }
