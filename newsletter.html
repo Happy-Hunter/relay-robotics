@@ -49,22 +49,22 @@
         <img id="mascot-img" src="./css/images/mascot.png" alt="">
         <p>Your information is confidential and won't be shared to other parties.</p>
         <!-- Animation -->
-        <form>
+        <form method="post" action="http://localhost:3000/subscribers">
             <label for="first-name">
                 <p>First Name<span>*</span></p>
-                <input class="email-input" type ="text" name="first-name" required></input>
+                <input class="email-input" type ="text" name="first_name" pattern="[a-zA-Z]+" minlength="2" required></input>
                 <p class="validation-rules">* The first name should have at least 2 letters and should not have special characters or numbers</p>
             </label>
 
             <label for="last-name">
                 <p>Last Name<span>*</span></p>
-                <input class="email-input" type="text" name="last-name" required></input>
+                <input class="email-input" type="text" name="last_name" pattern="[a-zA-Z]+" minlength="2" required></input>
                 <p class="validation-rules">*The first name should have at least 2 letters and should not have special characters or numbers</p>
             </label>
 
             <label for="email">
                 <p>Email Address<span>*</span></p>
-                <input class="email-input" type="text" placeholder="xxx@example.com" name="email" required></input>
+                <input class="email-input" type="email" placeholder="xxx@example.com" name="email" required></input>
                 <p class="validation-rules">*The email should have at least one @ and one full stop (.)</p>
             </label>
 
