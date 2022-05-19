@@ -16,7 +16,8 @@ body {
 
 .logo {
     width: 50%;
-    height: auto;
+    margin: 8% auto;
+    display: block;
 }
 
 .inner-content{
@@ -25,13 +26,28 @@ body {
 
 .nav-left {
     width: 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.nav-left-inner {
+    display: flex;
+}
+
+.newsletter {
+    color: white;
+    text-decoration: none;
+    margin: auto;
+    
+    display: inline-block;
 }
 
 .nav-right {
     width: 25%;
     display: flex;
-    justify-content: space-around;
-    border: 1px solid white;
+    flex-direction: column;
+    justify-content: center;
 }
 
 button {
@@ -117,4 +133,15 @@ hr {
     height: auto;
     margin: 0 auto;
     display: block;
+}
+
+.hamburger {
+    display: inline-block;
+    position: relative;
+    width: 45%;
+}
+
+.nav-right-inner {
+    display: flex;
+    justify-content: space-around;
 }
