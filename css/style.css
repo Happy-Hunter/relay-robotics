@@ -58,6 +58,71 @@ body {
     justify-content: center;
 }
 
+@media (max-width: 600px) {
+    .nav-bar {
+        margin: 0;
+        display: flex;
+        justify-content: space-between;
+        background-color: black;
+        position: relative;
+    }
+ 
+    ul {
+        list-style-type: none;
+        display: flex;
+        width: 100%;
+        padding: 0;
+    }
+    
+    .logo {
+        width: 50%;
+        margin: 8% auto;
+        display: block;
+    }
+    
+    .nav-left {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+    }
+    
+    .nav-left-inner {
+        display: flex;
+    }
+    
+    .newsletter {
+        color: white;
+        text-decoration: none;
+        margin: auto;
+        display: inline-block;
+        position: absolute;
+    }
+    
+    .nav-right {
+        width: 25%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+    }
+
+    .nav-right-inner {
+        display: flex;
+        justify-content: center;
+    }
+
+    .hamburger {
+        margin: 15px;
+    }
+
+    svg {
+        margin: 5px;
+        /* position: relative; */
+    }
+}
+
 button {
     background-color: #2C69B2;
     color: white;
@@ -79,6 +144,16 @@ button {
 }
 
 input[type="text"] {
+    background-color : #f4f3f3; 
+    border: none;
+    display: block;
+    width: 100%;
+    line-height: 3em;
+    margin: 0, 10px;
+    font-size: 14pt;
+  }
+
+  input[type="email"] {
     background-color : #f4f3f3; 
     border: none;
     display: block;
@@ -148,7 +223,9 @@ hr {
 .hamburger {
     display: inline-block;
     position: relative;
-    width: 45%;
+    width: 30%;
+    max-width: 50%;
+    height: auto;
 }
 
 .nav-right-inner {
