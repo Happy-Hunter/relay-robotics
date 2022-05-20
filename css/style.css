@@ -213,11 +213,10 @@ hr {
 }
 
 #mascot-img {
-    width: 60%;
     height: auto;
     margin: 0 auto;
     display: block;
-    max-width: 30%;
+    max-width: 70%;
 }
 
 .hamburger {
@@ -301,6 +300,6 @@ input:checked + .slider:before {
     display: inline-block;
 }
 
-.pref-head:last-of-type {
+.pref-head:nth-of-type(2n - 1) {
     padding-left: 40px;
 }

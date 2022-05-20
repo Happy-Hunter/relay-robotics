@@ -52,7 +52,6 @@
     <div class="form-container">
         <h1 class="heading">Receive news and updates</h1>
         <img id="mascot-img" src="./css/images/mascot.png" alt="">
-        <p>Your information is confidential and won't be shared to other parties.</p>
         <!-- Animation -->
         <form method="post" action="http://localhost:3000/subscribers">
             <label for="first-name">
@@ -104,21 +103,28 @@
             <button>Preview new updates</button>
           
             <hr />
-              
-            <h2>Reviews</h2>
-            <label class="switch">
-                <input type="checkbox" name="reviews">
-                <span class="slider round"></span>
-            </label>
-              <p>See what Relay Robotics community is saying.</p>
-              <button>Preview community reviews</button>
-             <hr />
-              
-             <h2>The Future</h2>
-             <label class="switch">
-                <input type="checkbox" name="investments">
-                <span class="slider round"></span>
-            </label>
+            
+            <div class="pref-head">
+                <h2>Reviews</h2>
+            </div>
+            <div class="pref-head">
+                <label class="switch">
+                    <input type="checkbox" name="reviews">
+                    <span class="slider round"></span>
+                </label>
+            </div>
+            <p>See what Relay Robotics community is saying.</p>
+            <button>Preview community reviews</button>
+            <hr />
+            <div class="pref-head">
+                <h2>The Future</h2>
+            </div>
+            <div class="pref-head">
+                <label class="switch">
+                    <input type="checkbox" name="investments">
+                    <span class="slider round"></span>
+                </label>
+            </div>
               <p>Read articles about our future investment.</p>
               <button>Preview investment articles</button>
           
