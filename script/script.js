@@ -10,14 +10,15 @@ $(() => {
         $mascot.attr('src', './css/images/mascot.png');
     }
 
-    function clickHandler() {
+    function submitHandler() {
         $mascot.attr('src', './css/images/mascot-happy.png');
+        window.scrollTo(0, 0);
     }
 
     const $inputs = $('.email-input');
     $inputs.on('mouseenter', handlerIn);
     $inputs.on('mouseleave', handlerOut);
 
-    const $submit = $('#submit-button button');
-    $submit.on('click', clickHandler);
+    const $form = $('form');
+    $form.on('submit', submitHandler);
 });
