@@ -1,0 +1,23 @@
+.autosuffix {
+    margin-left: 20%;
+    margin-top: 10px;
+    box-shadow: $shadow;
+    display: inline-block;
+    border-radius: 3px;
+    position: absolute;
+    li {
+      padding: 14px;
+      padding-right: 20px;
+      cursor: pointer;
+      color: darken($grey, 40%);
+      &:first-of-type {
+        border-radius: 3px 3px 0 0;
+      }
+      &:last-of-type {
+        border-radius: 0 0 3px 3px;
+      }
+      &:hover {
+        background: lighten($grey, 30%);
+      }
+    }
+}  

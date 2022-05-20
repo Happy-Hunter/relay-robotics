@@ -20,4 +20,13 @@ $(() => {
 
     const $submit = $('#submit-button button');
     $submit.on('click', clickHandler);
+
+    $("#email").emailautocomplete({
+        suggClass: "autocomplete",
+        domains:[""]
+      });
+
+    
 });
+
+

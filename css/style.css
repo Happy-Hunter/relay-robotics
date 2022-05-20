@@ -305,3 +305,7 @@ input:checked + .slider:before {
     padding-right: 5px;
     float: right;
 }
+
+.autocomplete {
+    color: gray;
+}
