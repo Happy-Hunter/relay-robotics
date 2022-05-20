@@ -301,5 +301,7 @@ input:checked + .slider:before {
 }
 
 .pref-head:nth-of-type(2n - 1) {
-    padding-left: 40px;
+    padding-top: 5px;
+    padding-right: 5px;
+    float: right;
 }
